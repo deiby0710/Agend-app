@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const btnReporte = document.getElementById('btnReporte');
     btnReporte.addEventListener('click',() => {
-        console.log('Hola cacorro')
+        window.location.href = '/api/reporte/citas';
     })
-
 });
