@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/segunda.css">
+    <title>Agendamiento Genhospi</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="tittle">Agendamiento Genhospi</h2>
+
+            <button type="submit" id="btnEnviar" class="btn">Elegir Día</button>
+        </form>
+
+        <!-- Área de respuesta -->
+        <p id="fechaSeleccionadaTexto" style="display: none; font-weight: bold;"></p>
+
+        <!-- Contenedor de horarios -->
+        <div id="horariosContainer" style="display: none;">
+            <select id="selectHorarios">
+                <option value="">-- Selecciona un horario --</option>
+            </select>
+
+             <!-- Contenedor de confirmación cita -->
+            <div class="ticket">
+                
+                <div class="content" >
+                    <p>Buen Día, <span id="nombre"></span>, farmacia GENHOSPI SANITAS le notifica que su 
+                        medicamento pendiente está listo para recoger.
+                    </p>
+
+                    <div class="data-pend">
+                        <p><strong>Medicamentos a Entregar:</strong></p>
+                        <textarea id="med-pend" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="data-box">
+                        <div class="fecha-hora">
+                            <p><strong>📅 Fecha:</strong> <span id="fecha"></span></p>
+                            <p><strong>⏰ Hora:</strong> <span id="hora"></span></p>
+                        </div>
+                        <p><strong>📌 Sede:</strong> <span id="sede"></span></p>
+                    </div>
+                    
+                    <div class="instructions">
+                        <p><strong>📌 Indicaciones para el Retiro del Medicamento:</strong></p>
+                        <ul>
+                        <li>🕒 Llegue 10 minutos antes de la hora solicitada.</li>
+                        <li>🆔 Lleve su documento de identidad.</li>
+                        <li>📄 Lleve la formula original (y una copia) con el sello del medicamento pendiente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btnAgendar" class="btn" style="display: none;">Enviar Mensaje</button>
+        </div>
+
+    <script src="js/segunda.js"></script> <!-- Archivo JS separado -->
+</body>
+</html>
+
+
+   
