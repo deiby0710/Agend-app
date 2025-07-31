@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const today = new Date();
         const firstDay = today.toISOString().split("T")[0];
-        const lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0).toISOString().split("T")[0];
+        const lastDay = new Date(today.getFullYear(), today.getMonth() + 2, 0).toISOString().split("T")[0];
 
         const { value: date } = await Swal.fire({
             title: "Seleccione una fecha",
