@@ -17,10 +17,10 @@ const HORARIOS_POSIBLES = (() => {
     }
 
     // Mañana: 07:30 AM - 11:30 AM (Cada 15 minutos)
-    agregarHorarios("07:30", "11:45", 15);
+    agregarHorarios("07:30", "11:50", 10);
 
     // Tarde: 02:00 PM - 05:00 PM (Cada 15 minutos)
-    agregarHorarios("14:00", "16:45", 15);
+    agregarHorarios("14:00", "16:50", 10);
 
     return horarios;
 })();
